@@ -48,7 +48,6 @@ function clearFunction(event) {
 }
 
 // Coloring, actual game.
-
 document.body.addEventListener("mouseover", e => {
   if (e.target.classList.contains("box")) {
     e.target.style.backgroundColor = "black";
@@ -56,3 +55,8 @@ document.body.addEventListener("mouseover", e => {
 });
 
 // Cheating.
+document.body.addEventListener("click", e => {
+  if (e.target.classList.contains("box")) {
+    e.target.style.backgroundColor = "white";
+  }
+});
