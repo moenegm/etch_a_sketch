@@ -13,7 +13,7 @@ pDirections.className = "p";
 
 h1Directions.textContent = "Moe's Etch-A-Sketch";
 pDirections.textContent =
-  "Directions: hover mouse over the grid to draw a beatiful picture. If you want to start over click the large orange button that says 'clear section'.\r\n\r\nPSST: listen, I know it's a little boring like this so I added a cheat code. Click on thescreen to erase the box you are currently over. This way you get to have more fun!";
+  "Directions: hover mouse over the grid to draw a beautiful sketch!. If you want to start over click the large orange button that says 'clear section'.\r\n\r\nPSST: listen, I know it's a little boring like this so I added a cheat code. Click on any box to erase that box you are currently over. This way you get to have more fun!";
 
 //Button Declartion.
 const clear = document.createElement("button");
