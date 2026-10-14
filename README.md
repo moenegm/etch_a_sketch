@@ -1,4 +1,4 @@
-# Etch-A-Sketch
+# Mr. Negm's Etch A Sketch
 
 A browser version of the classic drawing toy, built with plain HTML, CSS and JavaScript with no libraries or build step.
 
