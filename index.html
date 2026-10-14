@@ -3,12 +3,47 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="An Etch-A-Sketch you draw on with your mouse or finger." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="main.css" />
-    <title>Moe's Etch-A-Sketch</title>
+    <title>Etch-A-Sketch</title>
   </head>
   <body>
-    <div class="container" id="container"></div>
+    <main class="page">
+      <div class="toy" id="toy">
+        <h1 class="logo">Etch A Sketch</h1>
+
+        <div class="screen">
+          <div class="grid" id="grid" aria-label="Drawing grid"></div>
+        </div>
+
+        <div class="controls">
+          <div class="knob" aria-hidden="true"></div>
+
+          <div class="panel">
+            <div class="modes" role="radiogroup" aria-label="Pen">
+              <button class="mode is-active" data-mode="classic" role="radio" aria-checked="true">Classic</button>
+              <button class="mode" data-mode="shade" role="radio" aria-checked="false">Shade</button>
+              <button class="mode" data-mode="rainbow" role="radio" aria-checked="false">Rainbow</button>
+              <button class="mode" data-mode="eraser" role="radio" aria-checked="false">Eraser</button>
+            </div>
+
+            <label class="size">
+              <span>Grid <output id="size-label">32 × 32</output></span>
+              <input type="range" id="size" min="8" max="100" value="32" />
+            </label>
+
+            <button class="shake" id="shake">Shake to clear</button>
+          </div>
+
+          <div class="knob" aria-hidden="true"></div>
+        </div>
+      </div>
+
+      <p class="hint">Move your mouse over the screen to draw, or drag with your finger on a phone.</p>
+    </main>
     <script src="main.js"></script>
   </body>
 </html>
